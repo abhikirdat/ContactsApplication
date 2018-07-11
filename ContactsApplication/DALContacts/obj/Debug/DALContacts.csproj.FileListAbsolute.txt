@@ -1,0 +1,7 @@
+E:\MDG\MVC\ContactsApplication\DALContacts\bin\Debug\DALContacts.dll
+E:\MDG\MVC\ContactsApplication\DALContacts\bin\Debug\DALContacts.pdb
+E:\MDG\MVC\ContactsApplication\DALContacts\bin\Debug\StructuresContacts.dll
+E:\MDG\MVC\ContactsApplication\DALContacts\bin\Debug\StructuresContacts.pdb
+E:\MDG\MVC\ContactsApplication\DALContacts\obj\Debug\DALContacts.csprojResolveAssemblyReference.cache
+E:\MDG\MVC\ContactsApplication\DALContacts\obj\Debug\DALContacts.dll
+E:\MDG\MVC\ContactsApplication\DALContacts\obj\Debug\DALContacts.pdb

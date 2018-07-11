@@ -1,0 +1,140 @@
+﻿@model IEnumerable<ContactsApplication.Models.ContactViewModel>
+
+@{
+    ViewBag.Title = "Contact Information";
+}
+
+<style>
+    body {
+        background-color: white !important;
+    }
+
+    th {
+        height: 35px;
+        background-color: cadetblue;
+        border: 1px solid white;
+    }
+
+    td {
+        height: 25px;
+        border: 1px solid;
+        padding-left: 1%;
+    }
+
+    .list-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .add-contact {
+        text-align: right;
+        padding-right: 2%;
+        padding-bottom: 1%;
+    }
+
+
+
+    .form-control {
+        height: 25px;
+        width: 300px;
+        font-size: 12pt;
+    }
+
+    .form-label {
+        width: 35%;
+        font-size: 11pt;
+        text-align: right;
+        padding-right: 4%;
+        line-height: 45px;
+    }
+
+    .form-table {
+        width: 100%;
+    }
+
+    .form-header {
+        text-align: center;
+        border-bottom: 3px solid green;
+    }
+
+    .form-subdiv {
+        background-color: white;
+        border-radius: 15px;
+        display: inline-block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 600px;
+        height: 460px;
+        margin: auto;
+    }
+
+    .form-btnCreate {
+        width: 200px;
+        height: 35px;
+        background-color: green;
+        font-size: 12pt;
+        border: 1px solid gray;
+        border-radius: 7px;
+    }
+</style>
+
+<div class="form-header">
+    <h2>Contact Information</h2>
+    <div class="add-contact">
+        @Html.ActionLink("Add New Contacts", "Create")
+    </div>
+</div>
+<table class="list-table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MobileNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            Action
+        </th>
+    </tr>
+
+    @foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FirstName)
+                    @Html.HiddenFor(modelItem=>item.ContactID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmailID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MobileNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.ContactID }) |                           @*Pass Contacts ID as parameter to Edit*@
+                    @Html.ActionLink("Details", "Details", new { id=item.ContactID }) |                     @*Pass Contacts ID as parameter to details*@
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ContactID },                       @*Pass Contacts ID as parameter to delete*@
+                    new { onclick = "return confirm('Are you sure you wish to delete this Contact?');" })   @*confirm before delete contact*@                
+                </td>
+            </tr>
+        }
+
+</table>
+ 

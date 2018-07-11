@@ -1,0 +1,50 @@
+﻿
+body {
+    background-color: #d7bde2;
+}
+
+.form-control {
+    height: 25px;
+    width: 300px;
+    font-size: 12pt;
+}
+
+.form-label {
+    width: 35%;
+    font-size: 11pt;
+    text-align: right;
+    padding-right: 4%;
+    line-height: 45px;
+}
+
+.form-table {
+    width: 100%;
+}
+
+.form-header {
+    text-align: center;
+    border-bottom: 3px solid green;
+}
+
+.form-subdiv {
+    background-color: white;
+    border-radius: 15px;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 600px;
+    height: 460px;
+    margin: auto;
+}
+
+.form-btnCreate {
+    width: 200px;
+    height: 35px;
+    background-color: green;
+    font-size: 12pt;
+    border: 1px solid gray;
+    border-radius: 7px;
+}

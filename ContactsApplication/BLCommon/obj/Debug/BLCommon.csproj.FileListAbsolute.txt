@@ -1,0 +1,5 @@
+E:\MDG\MVC\ContactsApplication\BLCommon\bin\Debug\BLCommon.dll
+E:\MDG\MVC\ContactsApplication\BLCommon\bin\Debug\BLCommon.pdb
+E:\MDG\MVC\ContactsApplication\BLCommon\obj\Debug\BLCommon.dll
+E:\MDG\MVC\ContactsApplication\BLCommon\obj\Debug\BLCommon.pdb
+E:\MDG\MVC\ContactsApplication\BLCommon\obj\Debug\BLCommon.csprojResolveAssemblyReference.cache

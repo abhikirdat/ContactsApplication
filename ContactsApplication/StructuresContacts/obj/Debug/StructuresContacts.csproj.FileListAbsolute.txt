@@ -1,0 +1,5 @@
+E:\MDG\MVC\ContactsApplication\StructuresContacts\bin\Debug\StructuresContacts.dll
+E:\MDG\MVC\ContactsApplication\StructuresContacts\bin\Debug\StructuresContacts.pdb
+E:\MDG\MVC\ContactsApplication\StructuresContacts\obj\Debug\StructuresContacts.dll
+E:\MDG\MVC\ContactsApplication\StructuresContacts\obj\Debug\StructuresContacts.pdb
+E:\MDG\MVC\ContactsApplication\StructuresContacts\obj\Debug\StructuresContacts.csprojResolveAssemblyReference.cache
